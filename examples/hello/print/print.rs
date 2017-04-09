@@ -28,8 +28,7 @@ fn main() {
 
     // It will even check to make sure the correct number of arguments are
     // used.
-    println!("My name is {0}, {1} {0}", "Bond");
-    // FIXME ^ Add the missing argument: "James"
+    println!("My name is {0}, {1} {0}", "Bond", "James");
     
     // Create a structure which contains an `i32`. Name it `Structure`.
     #[allow(dead_code)]
@@ -37,6 +36,5 @@ fn main() {
 
     // However, custom types such as this structure require more complicated
     // handling. This will not work.
-    println!("This struct `{}` won't print...", Structure(3));
-    // FIXME ^ Comment out this line.
+    //println!("This struct `{}` won't print...", Structure(3));
 }
